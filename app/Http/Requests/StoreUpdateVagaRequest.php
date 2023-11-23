@@ -23,9 +23,9 @@ class StoreUpdateVagaRequest extends FormRequest
     {
         return [
             'titulo' => 'required|string|max:255',
-            'descricao' => 'required|string|max:500',
+            'descricao' => 'string|max:500',
             'localizacao' => 'required|string|max:255',
-            'nivel' => 'required|string|max:255',
+            'nivel' => 'string|max:255',
             'contrato' => 'string|max:10',
             'salario' => 'numeric',
             'empresa' => 'required|string|max:255',
